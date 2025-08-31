@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "lib": ["es5", "es6", "DOM"],
+    "target": "es6",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "types": ["express"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@entities/*": ["src/database/entities/*"],
+      "@utilities/*": ["src/utilities/*"],
+      "@routes/*": ["src/http/routes/*"],
+      "@controllers/*": ["src/http/controllers/*"],
+      "@middleware/*": ["src/http/middleware/*"],
+      "@validators/*": ["src/http/validators/*"],
+      "@constant/*": ["src/constant/*"],
+      "@app-types/*": ["src/types/*"],
+      "@vendor/*": ["src/vendor/*"],
+      "@service/*": ["src/service/*"],
+      "@models/*": ["src/database/models/*"],
+      "@repositories/*": ["src/repositories/*"],
+      "@tests/*": ["src/tests/*"],
+      "@mocks/*": ["src/tests/__mocks__/*"],
+      "@database/*": ["src/database/*"],
+      "@lib/*": ["src/lib/*"],
+      "@queue/*": ["src/queue/*"],
+      "@data/*": ["src/data/*"]
+    }
+  },
+  "include": ["src/**/*", "src/types/**/*"],
+  "exclude": ["node_modules"]
+}
